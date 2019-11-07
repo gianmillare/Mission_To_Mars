@@ -17,7 +17,7 @@ def scrape():
     mars = mongo.db.mars
     mars_data = scrape_mars.scrape_all()
     mars.update({}, mars_data, upsert=True)
-    return "Scraping Successful!"
+    return "Mission to Mars"
 
 
 if __name__ == "__main__":
